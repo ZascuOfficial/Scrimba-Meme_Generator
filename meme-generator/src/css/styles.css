@@ -3,3 +3,14 @@
   --dark-gray: #121212;
   --light-purple: #bb86fc;
 }
+
+/* Global Styles
+========================= */
+
+body {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+}
+
+/* Typography
+========================= */
