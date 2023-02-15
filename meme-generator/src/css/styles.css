@@ -1,7 +1,7 @@
 :root {
   --light-gray: #e9ecef;
   --dark-gray: #121212;
-  --light-purple: #bb86fc;
+  --purple: #6c43a1;
 }
 
 /* Global Styles
@@ -15,3 +15,32 @@ body {
 
 /* Typography
 ========================= */
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+/* Layout
+========================= */
+
+/* Header
+--------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+  padding: 1em;
+  background-color: var(--purple);
+  border-bottom: 10px solid #462b69;
+}
+
+header h1 {
+  border-bottom: 2px solid;
+}
+
+.header-logo {
+  width: 3.75em;
+  object-fit: cover;
+}
