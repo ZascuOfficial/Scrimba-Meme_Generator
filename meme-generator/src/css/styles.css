@@ -1,11 +1,17 @@
 :root {
   --light-gray: #e9ecef;
   --dark-gray: #121212;
-  --purple: #6c43a1;
+  --light-purple: #6c43a1;
+  --dark-purple: #462b69;
 }
 
 /* Global Styles
 ========================= */
+
+*::selection {
+  background-color: var(--dark-purple);
+  color: var(--light-gray);
+}
 
 body {
   font-family: 'Karla', sans-serif;
@@ -32,8 +38,8 @@ header {
   align-items: center;
   gap: 1.25em;
   padding: 1em;
-  background-color: var(--purple);
-  border-bottom: 10px solid #462b69;
+  background-color: var(--light-purple);
+  border-bottom: 10px solid var(--dark-purple);
 }
 
 header h1 {
