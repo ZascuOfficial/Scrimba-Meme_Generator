@@ -8,6 +8,7 @@
 ========================= */
 
 body {
+  font-family: 'Karla', sans-serif;
   background-color: var(--dark-gray);
   color: var(--light-gray);
 }
