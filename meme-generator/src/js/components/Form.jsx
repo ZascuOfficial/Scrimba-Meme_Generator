@@ -5,6 +5,7 @@ export default function Form() {
     <form>
       <input
         type="text"
+        placeholder="Top text"
         name="top-text"
         id="top-text"
         className="form-text-input"
@@ -12,6 +13,7 @@ export default function Form() {
 
       <input
         type="text"
+        placeholder="Bottom text"
         name="bottom-text"
         id="bottom-text"
         className="form-text-input"
