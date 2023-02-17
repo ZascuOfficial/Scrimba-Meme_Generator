@@ -2,14 +2,15 @@
   --light-gray: #e9ecef;
   --dark-gray: #121212;
   --light-purple: #6c43a1;
-  --dark-purple: #462b69;
+  --mid-purple: #462b69;
+  --dark-purple: #2f1d46;
 }
 
 /* Global Styles
 ========================= */
 
 *::selection {
-  background-color: var(--dark-purple);
+  background-color: var(--mid-purple);
   color: var(--light-gray);
 }
 
@@ -39,7 +40,7 @@ header {
   gap: 1.25em;
   padding: 1em;
   background-color: var(--light-purple);
-  border-bottom: 10px solid var(--dark-purple);
+  border-bottom: 10px solid var(--mid-purple);
 }
 
 header h1 {
@@ -49,4 +50,74 @@ header h1 {
 .header-logo {
   width: 3.75em;
   object-fit: cover;
+}
+
+/* Main
+--------------- */
+
+main {
+  display: grid;
+  gap: 2em;
+  padding: 2em;
+}
+
+@media (min-width: 1350px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+/* Form
+--------------- */
+
+form {
+  width: 90%;
+  max-width: 40em;
+  display: grid;
+  gap: .95em;
+  margin-inline: auto;
+}
+
+.form-text-input {
+  padding: .5em;
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+}
+
+.form-text-input:focus {
+  outline: none;
+}
+
+.form-text-input::selection {
+  background-color: var(--light-purple);
+}
+
+.new-image-button {
+  padding: .7em 1em;
+  background-color: var(--light-purple);
+  color: var(--light-gray);
+  border-bottom: 7px solid var(--mid-purple);
+  transition: ease 75ms;
+}
+
+.new-image-button:hover {
+  background-color: var(--mid-purple);
+  border-color: var(--dark-purple);
+}
+
+.new-image-button:active {
+  border: none;
+  translate: 0 7px;
+}
+
+@media (min-width: 550px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .new-image-button {
+    grid-column: span 2;
+  }
 }
