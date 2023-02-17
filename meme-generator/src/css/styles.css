@@ -71,7 +71,7 @@ main {
 /* Form
 --------------- */
 
-form {
+.form {
   width: 90%;
   max-width: 40em;
   display: grid;
