@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Form() {
   return (
-    <form>
+    <div className="form">
       <input
         type="text"
         placeholder="Top text"
@@ -22,6 +22,6 @@ export default function Form() {
       <button className="new-image-button">
         Get new image
       </button>
-    </form>
+    </div>
   );
 }
