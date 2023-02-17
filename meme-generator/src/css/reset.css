@@ -22,4 +22,5 @@ video {
 
 button {
   border: none;
+  cursor: pointer;
 }
